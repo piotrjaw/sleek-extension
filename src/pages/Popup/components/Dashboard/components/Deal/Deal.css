@@ -1,0 +1,14 @@
+.sl-Deal {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+}
+
+.sl-Deal a {
+  color: cornflowerblue;
+}
+
+.sl-Deal a {
+  color: hotpink;
+}

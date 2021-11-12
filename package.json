@@ -1,11 +1,11 @@
 {
-  "name": "chrome-extension-boilerplate-react",
-  "version": "4.2.0",
-  "description": "A chrome extension boilerplate built with React 17, Webpack 5, and Webpack Dev Server 4",
+  "name": "sleek-extension",
+  "version": "1.0.0",
+  "description": "Sleek Chrome extension",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lxieyang/chrome-extension-boilerplate-react.git"
+    "url": "https://github.com/piotrjaw/sleek-extension.git"
   },
   "scripts": {
     "build": "node utils/build.js",
