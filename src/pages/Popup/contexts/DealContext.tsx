@@ -36,6 +36,9 @@ export const DealProvider = ({ children }: IProps) => {
   const [deals, setDeals] = useState([]);
   const getDeals = useCallback(async () => {
     const deals = await service.getDeals();
+
+    chrome.runtime.sendMessage({ deals });
+
     setDeals(deals || []);
   }, [service]);
 

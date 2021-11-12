@@ -42,4 +42,17 @@ const addBanner = () => {
   document.body.append(banner);
 };
 
-addBanner();
+const removeBanner = () => {
+  const banner = document.querySelector(`#${SLEEK_ID}`);
+
+  if (banner) banner.remove();
+};
+
+chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+  console.log(request, sender);
+  if (!sender.tab && request.showBanner) {
+    addBanner();
+  } else {
+    removeBanner();
+  }
+});
